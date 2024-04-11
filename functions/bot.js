@@ -2,7 +2,7 @@ const { Telegraf } = require("telegraf")
 const { message } = require('telegraf/filters')
 
 const bot = new Telegraf(process.env.BOT_TOKEN);
-const adminId = new Telegraf(process.env.ADMIN_ID);
+const adminId = process.env.ADMIN_ID
 
 const messages = {
   "knihi": "Вітаю! Рады, што вы вырашылі далучыцца да нашай \"Кніжнай ініцыятывы\". Паўдзельнічаць у ёй вельмі проста."
